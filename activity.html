@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>社团活动 · 拾光摄影社</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body data-page="activity">
+    <header id="site-header"></header>
+    <main id="main" class="wrap">
+        <div class="page-intro">
+            <p class="eyebrow">02 / 社团日程</p>
+            <h1>社团活动</h1>
+            <p>从校园采风到作品交流。活动安排和往期记录均为实训示例。</p>
+        </div>
+        <div class="activity-layout">
+            <aside class="activity-nav" aria-label="本页导航">
+                <p class="eyebrow">本页目录</p><a href="#annual">01 年度活动</a><a href="#archive">02 往期回顾</a>
+            </aside>
+            <div class="activity-main">
+                <section class="card section prose">
+                    <h2>活动怎么参加？</h2>
+                    <p>社团以小组采风和作品交流为主。新成员可先参加入门活动，在指定点位完成简单的主题拍摄，再和同伴交换作品。以下年度活动表支持本页临时增删；刷新后恢复示例安排。</p>
+                </section>
+                <section id="annual" class="card section">
+                    <p class="eyebrow">01 / 年度活动</p>
+                    <h2>年度活动安排</h2>
+                    <form id="activity-form" class="activity-form">
+                        <div><label for="event-name">活动名称</label><input id="event-name" maxlength="30" required></div>
+                        <div><label for="event-date">时间</label><input id="event-date" type="date" required></div>
+                        <div><label for="event-place">地点</label><input id="event-place" maxlength="30" required></div>
+                        <button type="submit">添加活动</button>
+                    </form>
+                    <p id="activity-status" class="muted" role="status"></p>
+                    <div class="table-wrap">
+                        <table id="schedule" aria-label="年度活动安排">
+                            <thead>
+                                <tr>
+                                    <th>活动名称</th>
+                                    <th>时间</th>
+                                    <th>地点</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </section>
+                <section id="archive" class="card section">
+                    <p class="eyebrow">02 / 往期回顾</p>
+                    <h2>往期活动记录</h2>
+                    <div class="table-wrap">
+                        <table class="striped" aria-label="往期活动记录">
+                            <thead>
+                                <tr>
+                                    <th>活动名称</th>
+                                    <th>时间</th>
+                                    <th>地点</th>
+                                    <th>内容</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>校园光线观察</td>
+                                    <td>2026-03-21</td>
+                                    <td>教学楼连廊</td>
+                                    <td>练习侧光构图</td>
+                                </tr>
+                                <tr>
+                                    <td>图书馆采风</td>
+                                    <td>2026-04-11</td>
+                                    <td>图书馆广场</td>
+                                    <td>记录建筑线条</td>
+                                </tr>
+                                <tr>
+                                    <td>春日植物摄影</td>
+                                    <td>2026-05-16</td>
+                                    <td>校园花园</td>
+                                    <td>练习近景取景</td>
+                                </tr>
+                                <tr>
+                                    <td>照片交流会</td>
+                                    <td>2026-06-13</td>
+                                    <td>社团活动室</td>
+                                    <td>交流照片与拍摄经验</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <div class="section"><button id="join" type="button">我要报名 →</button></div>
+            </div>
+        </div>
+    </main>
+    <footer id="site-footer"></footer>
+    <script src="js/common.js"></script>
+    <script src="js/activity.js"></script>
+</body>
+
+</html>

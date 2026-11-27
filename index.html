@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页 · 拾光摄影社</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body data-page="home">
+    <header id="site-header"></header>
+    <main id="main">
+        <section class="hero">
+            <div class="wrap hero-copy">
+                <p class="eyebrow">校园社团 / 摄影与观察</p>
+                <h1>拾光摄影社</h1>
+                <p class="hero-line">把平常的一天，拍成值得记住的一帧。</p><a class="button light" href="photo.html">浏览社团风采 →</a>
+            </div>
+        </section>
+        <div class="wrap">
+            <section class="section split">
+                <div>
+                    <p class="eyebrow">01 / 关于我们</p>
+                    <h2>从校园出发，<br>用照片记下日常</h2>
+                </div>
+                <div class="prose">
+                    <p>拾光摄影社是一群校园影像爱好者的练习场。无论你用手机还是相机，都可以从一束窗光、一段走廊或一条放学路开始。我们希望把摄影变成一种观察习惯：在按下快门之前，先看看光从哪里来，想想画面里最值得留下的是什么。
+                    </p>
+                    <p>社团计划开展校园采风、主题练习、照片交流和学期作品展。每次活动都有一个小题目，拍摄后大家一起看图，聊聊当时为什么这样构图、怎样处理背景，也分享那些没拍成的照片。第一次参加不需要准备作品；如果你愿意慢下来观察、听听别人的看法，也愿意分享自己的发现，就欢迎加入我们。
+                    </p>
+                </div>
+            </section>
+            <section class="section home-highlights" aria-labelledby="highlights-title">
+                <p class="eyebrow">02 / 社团活动</p>
+                <h2 id="highlights-title">下一次，和我们一起拍</h2>
+                <div class="home-highlights-grid">
+                    <article class="card"><img src="images/frame-01-hd.jpg" width="960" height="960"
+                            alt="校园建筑与草坪，建筑摄影示例" loading="lazy">
+                        <div>
+                            <h3>校园采风</h3>
+                            <p>从教学楼到操场，选一个熟悉的场景，分别试试远景、近景和不同角度。</p><a href="activity.html#annual">查看年度活动 →</a>
+                        </div>
+                    </article>
+                    <article class="card"><img src="images/frame-04-hd.jpg" width="960" height="960"
+                            alt="枝头的金色银杏叶，细节摄影示例" loading="lazy">
+                        <div>
+                            <h3>主题拍摄</h3>
+                            <p>给自己一个小题目，比如「一片叶子」或「窗边的光」，用三张照片讲清楚。</p><a href="photo.html">看看照片墙 →</a>
+                        </div>
+                    </article>
+                    <article class="card"><img src="images/frame-02-hd.jpg" width="960" height="960" alt="图书馆阅览区，室内光线示例"
+                            loading="lazy">
+                        <div>
+                            <h3>作品交流</h3>
+                            <p>带一张喜欢的照片，说说你为什么这样构图，也听听同伴看到了什么。</p><a href="register.html">加入拾光摄影社 →</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="section card" id="wall">
+                <p class="eyebrow">03 / 社团寄语墙</p>
+                <h2>给下一次相遇留句话</h2>
+                <p class="muted">可分享摄影灵感或活动建议；请勿填写手机号等个人信息。内容仅保存在当前浏览器。</p>
+                <form id="message-form" class="wall-form">
+                    <div><label for="nickname">昵称</label><input id="nickname" maxlength="20" placeholder="如：追光的人"
+                            required></div>
+                    <div><label for="message">寄语</label><input id="message" maxlength="100" placeholder="写下你想分享的话"
+                            required></div><button type="submit">发表寄语</button>
+                </form>
+                <p id="wall-status" class="muted" role="status"></p>
+                <ul id="messages" class="message-list"></ul>
+            </section>
+        </div>
+    </main>
+    <button id="back-top" class="back-top" type="button">↑ 返回顶部</button>
+    <footer id="site-footer"></footer>
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

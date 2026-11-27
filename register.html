@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>在线报名 · 拾光摄影社</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body data-page="register">
+    <header id="site-header"></header>
+    <main id="main" class="wrap">
+        <div class="page-intro">
+            <p class="eyebrow">03 / 加入拾光</p>
+            <h1>在线报名</h1>
+            <p>这是实训演示，不会上传信息。测试时请勿填写真名、常用密码或真实手机号。</p>
+        </div>
+        <div class="form-layout section">
+            <section class="card">
+                <h2>新成员报名表</h2>
+                <form id="register-form" novalidate>
+                    <div class="form-grid">
+                        <div><label for="username">用户名 <span class="required">*</span></label><input id="username"
+                                maxlength="20" placeholder="用于首页欢迎语" required></div>
+                        <div><label for="college">所在学院 <span class="required">*</span></label><input id="college"
+                                maxlength="40" placeholder="如：信息工程学院" required></div>
+                        <div><label for="password">密码 <span class="required">*</span></label><input id="password"
+                                type="password" autocomplete="new-password" minlength="6" placeholder="至少 6 位" required>
+                        </div>
+                        <div><label for="password-again">确认密码 <span class="required">*</span></label><input
+                                id="password-again" type="password" autocomplete="new-password" required></div>
+                        <div><label for="school">所在学校 <span class="required">*</span></label>
+                            <div class="input-action"><input id="school" maxlength="50" placeholder="可输入或选择"
+                                    required><button type="button" id="choose-school" class="outline">选择</button></div>
+                        </div>
+                        <div><label for="phone">联系电话 <span class="required">*</span></label><input id="phone" type="tel"
+                                inputmode="numeric" maxlength="11" placeholder="11 位数字" required></div>
+                        <fieldset class="full">
+                            <legend>性别（选填）</legend>
+                            <div class="choices"><input id="gender-m" name="gender" type="radio" value="男"><label
+                                    for="gender-m">男</label><input id="gender-f" name="gender" type="radio"
+                                    value="女"><label for="gender-f">女</label><input id="gender-n" name="gender"
+                                    type="radio" value="不透露"><label for="gender-n">不透露</label></div>
+                        </fieldset>
+                        <fieldset class="full">
+                            <legend>兴趣方向（选填）</legend>
+                            <div class="choices"><input id="interest-land" type="checkbox" value="自然风景"><label
+                                    for="interest-land">自然风景</label><input id="interest-campus" type="checkbox"
+                                    value="校园纪实"><label for="interest-campus">校园纪实</label><input id="interest-arch"
+                                    type="checkbox" value="建筑摄影"><label for="interest-arch">建筑摄影</label><input
+                                    id="interest-edit" type="checkbox" value="后期修图"><label
+                                    for="interest-edit">后期修图</label></div>
+                        </fieldset>
+                        <div class="full"><label for="bio">个人简介（选填）</label><textarea id="bio" rows="4" maxlength="200"
+                                placeholder="简单说说你喜欢拍什么"></textarea></div>
+                    </div>
+                    <div class="form-actions"><button id="submit-registration" type="submit">提交报名</button><button
+                            type="reset" class="outline">重置</button><a href="index.html">返回首页</a></div>
+                    <p id="register-status" role="status" class="muted"></p>
+                </form>
+            </section>
+            <aside class="card form-note">
+                <p class="eyebrow">报名须知</p>
+                <h2>只保存必要信息</h2>
+                <p>用户名、学院和学校保存在本浏览器；本次报名状态记在当前会话。密码、电话、性别、兴趣和个人简介不写入存储。</p>
+                <p>选校窗口若被拦截，可以允许弹窗后重试，也可以直接在学校栏输入。</p>
+            </aside>
+        </div>
+    </main>
+    <footer id="site-footer"></footer>
+    <script src="js/common.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>
